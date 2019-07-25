@@ -1,0 +1,15 @@
+#shell script for factorial of a number
+#factorial using while loop
+
+echo "Enter a number"
+read num
+
+factor=1
+
+while [ $num -gt 1 ]
+do
+  factor=$((factor * num))  #factor = factor * num
+  num=$((num - 1))      #num = num - 1
+done
+
+echo $factor
