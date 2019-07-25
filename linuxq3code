@@ -1,0 +1,2 @@
+
+for d in ./aws*/ ;do (cd "$d" && ls); done
