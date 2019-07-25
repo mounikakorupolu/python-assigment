@@ -1,14 +1,20 @@
 #!/bin/bash
-read a;
-read b;
-read c;
-if [ $a -eq $b ] && [ $b -eq $c ]
+echo "Enter  a"
+read a
+echo "Enter b"
+read b
+echo "Enter c"
+read c
+if [ $a -ne $b ] && [ $b -ne $c ] && [ $c -ne $a ]
 then
-echo "EQUILATERAL";
-elif [ $a -ne $b ] && [ $a -ne $c ] && [ $b -ne $c ]
-then
-echo "SCALENE";
+echo "Scalene"
+elif [ $a -eq $b ] && [ $b -eq $c ]
+then 
+echo "Equilateral"
 else
-echo "ISOSCELES";
+echo "Isosceles"
 fi
+
+
+
 
